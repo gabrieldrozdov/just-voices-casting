@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Variation 3</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		@keyframes background-image {
+			from {
+				background-position: 0vw;
+			}
+			to {
+				background-position: 100vh;
+			}
+		}
+		.home-background {
+			background-image: url('assets/brand/logo-photo-compressed.jpg');
+			animation: background-image 15s infinite linear;
+			background-size: 100vh;
+		}
+	</style>
+</head>
+<body>
+	<div class="home">
+		<div class="home-nav">
+			<a href="#" class="home-nav-link">Just Voices Casting</a>
+			<div class="home-nav-spacer"></div>
+			<a href="#" class="home-nav-link">Work</a>
+			<a href="#" class="home-nav-link">About</a>
+		</div>
+		<div class="home-slogan">
+			It’s just <em>sound</em> business<br>
+			<span class="home-slogan-alt">Full service casting company</span>
+		</div>
+		<div class="home-background"></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
