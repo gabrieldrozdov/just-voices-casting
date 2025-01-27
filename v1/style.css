@@ -1,0 +1,185 @@
+@font-face {
+	font-family: "Radio Canada Big";
+	src: url("assets/fonts/RadioCanadaBig-VariableFont_wght.ttf");
+	font-weight: 400 700;
+}
+@font-face {
+	font-family: "Radio Canada Big";
+	src: url("assets/fonts/RadioCanadaBig-Italic-VariableFont_wght.ttf");
+	font-weight: 400 700;
+	font-style: italic;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Radio Canada Big", sans-serif;
+	background-image: url('assets/brand/noise-compressed.jpg');
+	background-size: cover;
+	background-position: center;
+	animation: body-background steps(2) infinite 1s;
+}
+@keyframes body-background {
+	0% {
+		background-position: -50% 0;
+	}
+	25% {
+		background-position: -50% -50%;
+	}
+	50% {
+		background-position: 50% 0%;
+	}
+	75% {
+		background-position: -100% 100%;
+	}
+	100% {
+		background-position: -50% 0;
+	}
+}
+
+/* Main interface */
+.home-nav {
+	position: fixed;
+	top: 40px;
+	left: 40px;
+	right: 40px;
+	z-index: 9999;
+	display: flex;
+	gap: 40px;
+}
+.home-nav-spacer {
+	flex-grow: 1;
+}
+.home-nav-link {
+	color: white;
+	text-decoration: none;
+	position: relative;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	font-weight: 600;
+	line-height: 1em;
+}
+.home-nav-link:hover {
+	font-style: italic;
+}
+.home-nav-link:active {
+	color: black;
+}
+.home-slogan {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	right: 40px;
+	z-index: 999;
+	text-transform: uppercase;
+	font-size: max(4vw, 48px);
+	font-weight: 600;
+	letter-spacing: -0.02em;
+	line-height: 0.9em;
+	color: white;
+}
+.home-slogan-alt {
+	color: black;
+}
+@media only screen and (max-width: 600px) {
+	.home-nav {
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		gap: 10px;
+	}
+	.home-slogan {
+		bottom: 20px;
+		left: 20px;
+		right: 20px;
+	}
+}
+
+/* Generative background */
+.home-background {
+	width: 100vw;
+	height: 100dvh;
+	position: relative;
+	overflow: hidden;
+}
+.home-background-mouth {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-image: url('assets/brand/logo-photo-compressed.jpg');
+	background-size: cover;
+	transform: translate(-50%, -50%) rotate(0deg);
+	aspect-ratio: 1/1;
+	background-position: center;
+	transition-behavior: allow-discrete;
+}
+@keyframes rotate {
+	from {
+		transform: translate(-50%, -50%) rotate(-30deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(30deg);
+	}
+}
+@keyframes scale {
+	from {
+		transform: translate(-50%, -50%) scale(0.9);
+	}
+	to {
+		transform: translate(-50%, -50%) scale(1.5);
+	}
+}
+@keyframes translate {
+	from {
+		transform: translate(calc(-50% - 10vmax), -50%);
+	}
+	to {
+		transform: translate(calc(-50% + 10vmax), -50%);
+	}
+}
+@keyframes corners {
+	from {
+		border-radius: 0%;
+	}
+	to {
+		border-radius: 50%;
+	}
+}
+@keyframes blur {
+	from {
+		filter: blur(0px);
+	}
+	to {
+		filter: blur(25px);
+	}
+}
+@keyframes brightness {
+	from {
+		filter: brightness(100%) invert(0%);
+	}
+	to {
+		filter: brightness(25%) invert(100%);
+	}
+}
+@keyframes background-size {
+	from {
+		background-size: 50%;
+	}
+	to {
+		background-size: 125%;
+	}
+}
+@keyframes display {
+	0% {
+		display: block;
+	}
+	50% {
+		display: none;
+	}
+	100% {
+		display: none;
+	}
+}
