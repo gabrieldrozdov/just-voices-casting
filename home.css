@@ -439,7 +439,7 @@ body[data-transition="1"] .home-marquee {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: radial-gradient(rgba(193, 45, 96, .5) 0%, black 100%);
+	background: radial-gradient(rgba(255, 80, 150, 1) 0%, black 100%);
 	opacity: 0;
 	animation: home-background-gradient 1s .5s forwards;
 }

@@ -28,14 +28,14 @@ const workData = {
 		"url": "https://www.ispot.tv/ad/5kIm/progressive-cant-sleep",
 		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/5kIm" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`
 	},
-	"progressive-tv-progressive-park": {
-		"url": "https://youtu.be/iRyhqj0tO_8",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/iRyhqj0tO_8?si=W3FpKo42lot5IToG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-	},
-	"progressive-a-pet-too-far": {
-		"url": "https://www.youtube.com/watch?v=5ZKBTEDills&pp=ygUncHJvZ3Jlc3NpdmUgdHYgY29tbWVyY2lhbCBhIHBldCB0b28gZmFy",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/5ZKBTEDills?si=zJsxI97fAENu5Gqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-	},
+	// "progressive-tv-progressive-park": {
+	// 	"url": "https://youtu.be/iRyhqj0tO_8",
+	// 	"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/iRyhqj0tO_8?si=W3FpKo42lot5IToG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+	// },
+	// "progressive-a-pet-too-far": {
+	// 	"url": "https://www.youtube.com/watch?v=5ZKBTEDills&pp=ygUncHJvZ3Jlc3NpdmUgdHYgY29tbWVyY2lhbCBhIHBldCB0b28gZmFy",
+	// 	"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/5ZKBTEDills?si=zJsxI97fAENu5Gqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+	// },
 	"progressive-the-upper-hands": {
 		"url": "https://www.ispot.tv/ad/nmSa/progressive-home-quote-explorer-the-upper-hands",
 		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/nmSa" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`
