@@ -117,7 +117,7 @@ body[data-transition="1"] .nav {
 .nav-logo-just-voices-text {
 	position: relative;
 	z-index: 1;
-	color: white;
+	color: black;
 }
 .nav-logo-just-voices-background {
 	position: absolute;
@@ -125,7 +125,7 @@ body[data-transition="1"] .nav {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: black;
+	background-color: white;
 	transform: skewX(-3deg);
 }
 .nav-logo-casting {
@@ -135,7 +135,7 @@ body[data-transition="1"] .nav {
 .nav-logo-casting-text {
 	position: relative;
 	z-index: 1;
-	color: black;
+	color: white;
 }
 .nav-logo-casting-background {
 	position: absolute;
@@ -143,7 +143,7 @@ body[data-transition="1"] .nav {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: white;
+	background-color: black;
 	transform: skewX(-3deg);
 }
 @media only screen and (max-width: 1000px) {
@@ -180,4 +180,38 @@ body[data-transition="1"] .nav {
 	.nav-link {
 		width: min-content;
 	}
+}
+
+/* Footer */
+.footer {
+	background-color: rgba(0,0,0,.5);
+	padding: 20px;
+	text-align: center;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	font-variation-settings: "opsz" 32.0, "wght" 700;
+	font-weight: 700;
+}
+.footer div {
+	padding-top: .2em;
+}
+.footer a {
+	color: black;
+	padding: .4em .8em;
+	background-color: white;
+	clip-path: polygon(5% 0%, 98% 5%, 100% 95%, 2% 98%);
+	text-decoration: none;
+	font-variation-settings: "opsz" 32.0, "wght" 700;
+	font-weight: 700;
+	transition: clip-path .5s, transform .5s;
+	display: inline-block;
+}
+.footer a:hover {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.footer a:active {
+	transform: scale(0.9);
 }

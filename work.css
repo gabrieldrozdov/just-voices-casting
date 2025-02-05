@@ -395,7 +395,7 @@ body[data-transition="1"] .work-marquee {
 }
 .work-marquee-content {
 	display: flex;
-	height: 60px;
+	height: 80px;
 	overflow: hidden;
 	gap: 10px;
 	padding: 0 10px;
@@ -451,7 +451,7 @@ body[data-transition="1"] .work-marquee {
 	bottom: 0;
 	opacity: 0;
 	will-change: opacity;
-	background: radial-gradient(rgba(169, 151, 223, 0.5) 0%, black 100%);
+	background: radial-gradient(#9675f8 0%, #0a0126 100%);
 	animation: work-background-gradient 1s .5s forwards;
 }
 @keyframes work-background-gradient {

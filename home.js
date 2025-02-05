@@ -3,6 +3,9 @@ const home = document.querySelector('.home');
 let mousePos = [0.5, 0.5];
 home.addEventListener('mousemove', (e) => {
 	mousePos = [e.clientX/window.innerWidth, e.clientY/window.innerHeight];
+	if (window.innerWidth < 600) {
+		mousePos = [0.5, 0.5];
+	}
 })
 
 // Logo mouse-responsive animation
@@ -16,7 +19,8 @@ function animateLogo() {
 	const logoImage = document.querySelector('.logo-image');
 	let deltaLogoImage = [logoImagePos[0] - mousePos[0], logoImagePos[1] - mousePos[1]];
 	logoImagePos = [logoImagePos[0] - deltaLogoImage[0]/20, logoImagePos[1] - deltaLogoImage[1]/20];
-	logoImage.style.transform = `rotateY(${logoImagePos[0]*80-40}deg) rotateX(${-(logoImagePos[1]*20-10)}deg) translateX(${logoImagePos[0]*100-50}%) translateY(${logoImagePos[1]*1-.5}rem)`;
+	// logoImage.style.transform = `rotateY(${logoImagePos[0]*80-40}deg) rotateX(${-(logoImagePos[1]*20-10)}deg) translateX(${logoImagePos[0]*100-50}%) translateY(${logoImagePos[1]*1-.5}rem)`;
+	logoImage.style.transform = `translateX(${logoImagePos[0]*100-50}%) translateY(${logoImagePos[1]*1-.5}rem)`;
 
 	// Logo "just voices"
 	const logoJustVoices = document.querySelector('.logo-just-voices');
