@@ -189,37 +189,90 @@ body[data-transition="1"] .work-item {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	overflow: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: white;
-	padding: 5%;
-	clip-path: polygon(2% 2%, 98% 0%, 100% 100%, 1% 98%);
 	width: 100%;
 	max-width: 140vmin;
-	aspect-ratio: 2/1.4;
-	max-height: 80vmin;
+	max-height: max(80vmin, 500px);
 	margin: 0 auto;
 	transition: transform .5s;
+	padding: 15%;
 	transform: translate(-50%, calc(100vh - 50%)) rotate(10deg);
 	filter: drop-shadow(0 0 100px rgba(169, 151, 223, 0.5))
+}
+.work-lightbox-media[data-caption="0"] {
+	padding: 5%;
+	aspect-ratio: 2/1.4;
+	max-height: 80vmin;
+	overflow: hidden;
+	clip-path: polygon(1% 1%, 99% 0%, 100% 100%, 0% 99%);
 }
 .work-lightbox[data-active="1"] .work-lightbox-media {
 	transition: transform .5s .1s;
 	transform: translate(-50%, calc(0vh - 50%));
 }
 .work-lightbox-media-content {
+	padding: 5%;
 	position: relative;
 	width: 100%;
 	height: 100%;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 .work-lightbox-media-content > * {
 	width: 100% !important;
 	height: 100% !important;
+}
+.work-lightbox-media-caption-top {
+	position: absolute;
+	top: 0;
+	font-size: max(.75rem, 18px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 10px 20px;
+	z-index: 1;
+	text-wrap: balance;
+	display: flex;
+	clip-path: polygon(1% 1%, 99% 0%, 100% 100%, 0% 99%);
+	justify-content: center;
+	align-items: center;
+}
+.work-lightbox-media-caption-top[data-active="0"] {
+	display: none;
+}
+.work-lightbox-media-caption-bottom {
+	position: absolute;
+	bottom: 0;
+	font-size: max(.75rem, 18px);
+	left: 50%;
+	transform: translate(-50%, 50%);
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 10px 20px;
+	z-index: 1;
+	text-wrap: balance;
+	display: flex;	clip-path: polygon(0% 0%, 99% 0%, 99% 100%, 1% 99%);
+	justify-content: center;
+	align-items: center;
+}
+.work-lightbox-media-caption-bottom[data-active="0"] {
+	display: none;
+}
+@media only screen and (max-width: 600px) {
+	.work-lightbox-media-caption-top {
+		width: 80vw;
+	}
+	.work-lightbox-media-caption-bottom {
+		width: 80vw;
+	}
 }
 .work-lightbox-title {
 	position: absolute;
@@ -431,6 +484,57 @@ body[data-transition="1"] .work-marquee {
 	object-fit: contain;
 }
 
+/* Work clients */
+.work-clients {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 0;
+	gap: 1rem;
+	align-items: center;
+	padding: .5rem;
+}
+.work-clients-title {
+	font-size: 1.5rem;
+	text-align: center;
+	font-variation-settings: "opsz" 32.0, "wght" 700;
+	font-weight: 700;
+	text-wrap: balance;
+	padding: .3em 1em .2em 1em;
+	background-color: white;
+	color: black;
+	clip-path: polygon(1% 5%, 98% 0%, 100% 100%, 0% 100%);
+}
+.work-clients-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .5rem;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.work-clients-list p {
+	font-size: 1rem;
+	background-color: black;
+	color: white;
+	padding: .3em 1em .2em 1em;
+}
+.work-clients-list p:nth-child(odd) {
+	clip-path: polygon(1% 1%, 99% 0%, 97% 98%, 0% 100%);
+	animation: clients-list-item 2s ease-in-out infinite alternate;
+}
+.work-clients-list p:nth-child(even) {
+	clip-path: polygon(0% 5%, 98% 0%, 100% 100%, 0% 100%);
+	animation: clients-list-item 2s ease-in-out infinite alternate-reverse;
+}
+@keyframes clients-list-item {
+	from {
+		transform: rotate(-1deg);
+	}
+	to {
+		transform: rotate(1deg);
+	}
+}
+
 /* Work background */
 .work-background {
 	position: absolute;
@@ -451,7 +555,7 @@ body[data-transition="1"] .work-marquee {
 	bottom: 0;
 	opacity: 0;
 	will-change: opacity;
-	background: radial-gradient(#9675f8 0%, #0a0126 100%);
+	background: radial-gradient(#1c0a55 0%, #060211 100%);
 	animation: work-background-gradient 1s .5s forwards;
 }
 @keyframes work-background-gradient {

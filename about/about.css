@@ -133,7 +133,7 @@ body[data-transition="1"] .about-bio {
 	bottom: 0;
 	opacity: 0;
 	will-change: opacity;
-	background: radial-gradient(#bca617 0%, #3e2b01 100%);
+	background: radial-gradient(#917900 0%, #201500 100%);
 	animation: about-background-gradient 1s .5s forwards;
 }
 @keyframes about-background-gradient {

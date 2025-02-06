@@ -24,7 +24,7 @@ body[data-transition="1"] canvas {
 .home-h1 {
 	display: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	.home {
 		grid-template-columns: 1fr 1fr;
 		grid-auto-rows: 1fr min-content min-content min-content;
@@ -42,7 +42,6 @@ body[data-transition="1"] canvas {
 	font-style: italic;
 	color: white;
 	text-decoration: none;
-	overflow: hidden;
 	z-index: 999;
 	text-align: center;
 	display: flex;
@@ -51,6 +50,7 @@ body[data-transition="1"] canvas {
 	line-height: 0.9em;
 	letter-spacing: -0.03em;
 	white-space: nowrap;
+	padding: 20px;
 	transition: clip-path .5s, background-color .25s, color .25s, transform .5s;
 }
 .home-link-text {
@@ -65,7 +65,7 @@ body[data-transition="1"] canvas {
 .home-link:active {
 	transform: scale(.9);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	.home-link {
 		padding: 20px;
 		font-size: 24px;
@@ -173,7 +173,7 @@ body[data-transition="1"] .logo {
 		transform: translateY(0vh);
 	}
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	.logo {
 		grid-column: span 2;
 	}
@@ -332,7 +332,6 @@ body[data-transition="1"] .logo {
 	flex-direction: column;
 	text-decoration: none;
 	text-transform: uppercase;
-	overflow: hidden;
 	transform: translateY(100%);
 	animation: home-marquee-in 1s 1.25s forwards;
 	padding: 20px 0;
@@ -340,7 +339,7 @@ body[data-transition="1"] .logo {
 	z-index: 2;
 	transition: background-color .5s, opacity .25s;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	.home-marquee {
 		order: 3;
 		grid-column: span 1;
@@ -427,7 +426,7 @@ body[data-transition="1"] .home-marquee {
 	max-width: 100px;
 	object-fit: contain;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	.home-marquee {
 		grid-column: span 2;
 	}

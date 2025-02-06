@@ -73,7 +73,7 @@ homeLinkLeft.addEventListener('mouseleave', (e) => {
 
 let homeLinkLeftPos = [0.5, 0.5];
 function animateMainLinkWork() {
-	if (window.innerWidth > 1000) {
+	if (window.innerWidth > 700) {
 		const homeLinkText = homeLinkLeft.querySelector('.home-link-text');
 		let delta = [homeLinkLeftPos[0] - mousePos[0], homeLinkLeftPos[1] - mousePos[1]];
 		if (!homeLinkLeftActive) {
@@ -98,7 +98,7 @@ homeLinkRight.addEventListener('mouseleave', (e) => {
 
 let homeLinkRightPos = [0.5, 0.5];
 function animateMainLinkAbout() {
-	if (window.innerWidth > 1000) {
+	if (window.innerWidth > 700) {
 		const homeLinkText = homeLinkRight.querySelector('.home-link-text');
 		let delta = [homeLinkRightPos[0] - mousePos[0], homeLinkRightPos[1] - mousePos[1]];
 		if (!homeLinkRightActive) {
@@ -137,3 +137,22 @@ function initializeHomeTransitions() {
 	})
 }
 initializeHomeTransitions();
+
+// Play sound when logo clicked
+let soundPlaying = false;
+function playSound() {
+	if (soundPlaying) {
+		return
+	}
+	soundPlaying = true;
+	let logo = document.querySelector('.logo-image');
+	logo.style.pointerEvents = 'none';
+	let audio = new Audio('assets/brand/murmur.mp3');
+	audio.play();
+	setTimeout(() => {
+		setTimeout(() => {
+			logo.style.pointerEvents = 'all';
+			soundPlaying = false;
+		}, audio.duration*1000)
+	}, 100)
+}

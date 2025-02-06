@@ -4,6 +4,8 @@ const workData = {
 		"title": "Budweiser Lizards",
 		"url": "https://vimeo.com/312797893",
 		"embed": `<div style="padding:75% 0 0 0;position:static;"><iframe src="https://player.vimeo.com/video/312797893?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Budweiser | Those Frogs Are Gonna Pay"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+		"caption-top": "A Classic from the Just Voices Vault",
+		"caption-bottom": "Voices of Louie and Frankie — The Budweiser Lizards",
 		"thumbnail": "budweiser-lizards.jpg",
 		"active": true
 	},
@@ -244,14 +246,14 @@ const workData = {
 		"url": "https://www.youtube.com/watch?v=sN5RKniJxfI",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/sN5RKniJxfI?si=dZUIH2eMvyRy-yXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "progressive-radio-2024-dream-come-true-colonial.jpg",
-		"active": true
+		"active": false
 	},
 	"progressive-radio-2024-dream-come-true-walk-up": {
 		"title": "Progressive Radio 2024 Dream Come True Walk Up",
 		"url": "https://www.youtube.com/watch?v=ejZROy-gc7E",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/ejZROy-gc7E?si=IINB3glS2V6yjV6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "progressive-radio-2024-dream-come-true-walk-up.jpg",
-		"active": true
+		"active": false
 	},
 	"progressive-radio-2024-what-do-they-have-in-common-fireworks": {
 		"title": "Progressive Radio 2024 What Do They Have in Common — Fireworks",
@@ -476,6 +478,36 @@ function openLightbox(workItemKey) {
 	const workItemTitle = workItem.querySelector('.work-item-preview-title');
 	lightboxTitle.innerText = workItemTitle.innerText;
 	lightboxTitle.href = workData[workItemKey]['url'];
+
+	// Captions
+	const captionTop = document.querySelector('.work-lightbox-media-caption-top');
+	const captionBottom = document.querySelector('.work-lightbox-media-caption-bottom');
+	let captionTopText = workData[workItemKey]['caption-top'];
+	let captionBottomText = workData[workItemKey]['caption-bottom'];
+	let captionActive = false;
+	if (captionTopText != undefined) {
+		captionActive = true;
+		captionTop.dataset.active = 1;
+		captionTop.innerHTML = captionTopText;
+	} else {
+		captionTop.dataset.active = 0;
+		captionTop.innerHTML = '';
+	}
+	if (captionBottomText != undefined) {
+		captionActive = true;
+		captionBottom.dataset.active = 1;
+		captionBottom.innerHTML = captionBottomText;
+	} else {
+		captionBottom.dataset.active = 0;
+		captionBottom.innerHTML = '';
+	}
+
+	const lightboxMedia = document.querySelector('.work-lightbox-media');
+	if (captionActive) {
+		lightboxMedia.dataset.caption = 1;
+	} else {
+		lightboxMedia.dataset.caption = 0;
+	}
 }
 function lightboxClose() {
 	const lightbox = document.querySelector('.work-lightbox');
