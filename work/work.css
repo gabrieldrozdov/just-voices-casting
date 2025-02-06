@@ -517,22 +517,19 @@ body[data-transition="1"] .work-marquee {
 	background-color: black;
 	color: white;
 	padding: .3em 1em .2em 1em;
+	transform: scale(0);
+	transition: transform .5s;
+	cursor: default;
+}
+.work-clients-list p:hover {
+	transform: scale(1.1) !important;
+	transition: transform .2s;
 }
 .work-clients-list p:nth-child(odd) {
 	clip-path: polygon(1% 1%, 99% 0%, 97% 98%, 0% 100%);
-	animation: clients-list-item 2s ease-in-out infinite alternate;
 }
 .work-clients-list p:nth-child(even) {
 	clip-path: polygon(0% 5%, 98% 0%, 100% 100%, 0% 100%);
-	animation: clients-list-item 2s ease-in-out infinite alternate-reverse;
-}
-@keyframes clients-list-item {
-	from {
-		transform: rotate(-1deg);
-	}
-	to {
-		transform: rotate(1deg);
-	}
 }
 
 /* Work background */

@@ -369,7 +369,6 @@ initializeTitles();
 const callback = new IntersectionObserver((entries, observer) => {
 	
 	// Loop the entries
-	let delay = 0;
 	entries.forEach(entry => {
 
 		// Check if the element is intersecting with the viewport
@@ -377,7 +376,6 @@ const callback = new IntersectionObserver((entries, observer) => {
 			setTimeout(() => {
 				entry.target.dataset.active = 1;
 			}, Math.random()*250)
-			delay++;
 			
 			// Stop observing element
 			callback.unobserve(entry.target);
@@ -551,4 +549,25 @@ for (let navLink of document.querySelectorAll('.nav a')) {
 		e.preventDefault();
 		pageTransition(navLink.href);
 	})
+}
+
+// Clients list observer
+const clientObserver = new IntersectionObserver((entries, observer) => {
+	
+	// Loop the entries
+	entries.forEach(entry => {
+
+		// Check if the element is intersecting with the viewport
+		if (entry.isIntersecting) {
+			setTimeout(() => {
+				entry.target.style.transform = `scale(1) rotate(${Math.random()*5-2.5}deg)`;
+			}, Math.random()*500)
+
+		} else {
+			entry.target.style.transform = `scale(0)`;
+		}
+	});
+});
+for (let client of document.querySelectorAll('.work-clients-list p')) {
+	clientObserver.observe(client);
 }
