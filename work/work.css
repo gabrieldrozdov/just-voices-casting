@@ -200,7 +200,7 @@ body[data-transition="1"] .work-item {
 	max-height: max(80vmin, 500px);
 	margin: 0 auto;
 	transition: transform .5s;
-	transform: translate(-50%, calc(100vh - 50%)) rotate(10deg);
+	transform: translate(-50%, calc(150vh - 50%)) rotate(10deg);
 	filter: drop-shadow(0 0 100px rgba(169, 151, 223, 0.5))
 }
 .work-lightbox-media[data-caption="0"] {
