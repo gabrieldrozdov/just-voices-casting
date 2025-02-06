@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Just Voices Casting</title>
+
+	<meta name="author" content="Just Voices Casting">
+	<meta name="keywords" content="Voice Casting, Voice Acting, Casting, Voiceover">
+	<meta name="description" content="Full service casting company with over 27 years of experience.">
+	<meta property="og:url" content="https://justvoicescasting.com/">
+	<meta name="og:title" property="og:title" content="Just Voices Casting">
+	<meta property="og:description" content="Full service casting company with over 27 years of experience.">
+	<meta property="og:image" content="./assets/brand/opengraph.jpg">
+	<link rel="icon" type="png" href="assets/brand/favicon.png">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="home.css">
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+	<script src="https://unpkg.com/tone"></script>
+</head>
+<body>
+	<h1 class="home-h1">Just Voices Casting: It’s Just Sound Business</h1>
+
+	<main class="home">
+		<div class="home-link-left-parent">
+			<a href="work/" class="home-link home-link-left"><div class="home-link-text"><span>See our<br>work</span></div></a>
+		</div>
+
+		<div class="logo" id="logo">
+			<div class="logo-image-parent">
+				<div class="logo-image" onclick="playSound();">
+					<div class="logo-image-photo"></div>
+					<div class="logo-image-background"></div>
+				</div>
+			</div>
+			<div class="logo-just-voices-parent">
+				<div class="logo-just-voices">
+					<div class="logo-just-voices-text">Just Voices</div>
+					<div class="logo-just-voices-background"></div>
+				</div>
+			</div>
+			<div class="logo-casting-parent">
+				<div class="logo-casting">
+					<div class="logo-casting-text">Casting</div>
+					<div class="logo-casting-background"></div>
+				</div>
+			</div>
+			<div class="logo-slogan-parent">
+				<div class="logo-slogan">It’s just <em>sound</em> business</div>
+			</div>
+		</div>
+
+		<div class="home-link-right-parent">
+			<a href="about/" class="home-link home-link-right"><div class="home-link-text"><span>Learn<br>about us</span></div></a>
+		</div>
+
+		<a class="home-marquee" href="work/">
+			<h2 class="home-marquee-title">Our Clients</h2>
+			<div class="home-marquee-content">
+				<div class="home-marquee-content-block">
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/amerisave.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/bankofamerica.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/budweiser.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/coorslight.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/cox.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/cvs.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/disney.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/espnbet.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/farcry4.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/hennessy.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/hp.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/kinder.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/libertymutual.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/littleeinsteins.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/mcdonalds.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/needforspeed.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/newbalance.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/oreida.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/pnc.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/progressive.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/publix.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/spanx.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/toyota.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/volkswagen.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/wow.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/xfinity.png">
+					</div>
+				</div>
+				<div class="home-marquee-content-block">
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/amerisave.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/bankofamerica.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/budweiser.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/coorslight.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/cox.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/cvs.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/disney.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/espnbet.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/farcry4.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/hennessy.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/hp.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/kinder.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/libertymutual.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/littleeinsteins.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/mcdonalds.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/needforspeed.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/newbalance.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/oreida.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/pnc.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/progressive.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/publix.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/spanx.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/toyota.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/volkswagen.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/wow.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/xfinity.png">
+					</div>
+				</div>
+				<div class="home-marquee-content-block">
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/amerisave.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/bankofamerica.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/budweiser.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/coorslight.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/cox.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/cvs.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/disney.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/espnbet.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/farcry4.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/hennessy.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/hp.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/kinder.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/libertymutual.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/littleeinsteins.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/mcdonalds.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/needforspeed.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/newbalance.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/oreida.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/pnc.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/progressive.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/publix.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/spanx.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/toyota.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/volkswagen.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/wow.png">
+					</div>
+					<div class="home-marquee-content-block-logo">
+						<img src="assets/logos/xfinity.png">
+					</div>
+				</div>
+			</div>
+		</a>
+
+		<div class="home-background"><div class="home-background-gradient"></div></div>
+	</main>
+
+	<div class="home-notice">Sound on!</div>
+	
+	<script src="home.js"></script>
+</body>
+</html>
