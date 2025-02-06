@@ -109,6 +109,7 @@ body[data-transition="1"] .about-contact {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
+	text-shadow: 0 0 10px rgba(0,0,0,.05);
 }
 @keyframes about-bio-in {
 	from {
@@ -154,7 +155,7 @@ body[data-transition="1"] .about-bio {
 	bottom: 0;
 	opacity: 0;
 	will-change: opacity;
-	background: radial-gradient(#917900 0%, #201500 100%);
+	background: radial-gradient(#f9de4b 0%, #826f01 100%);
 	animation: about-background-gradient 1s .5s forwards;
 }
 @keyframes about-background-gradient {

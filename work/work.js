@@ -1,11 +1,11 @@
 // Work data
 const workData = {
 	"budweiser-lizards": {
-		"title": "Budweiser Lizards",
+		"title": "<span class='work-item-title-small'>A Classic from the Just Voices Vault</span><span>Voices of Louie and Frankie - The Budweiser Lizards</span>",
 		"url": "https://vimeo.com/312797893",
 		"embed": `<div style="padding:75% 0 0 0;position:static;"><iframe src="https://player.vimeo.com/video/312797893?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Budweiser | Those Frogs Are Gonna Pay"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
-		"caption-top": "A Classic from the Just Voices Vault",
-		"caption-bottom": "Voices of Louie and Frankie — The Budweiser Lizards",
+		// "caption-top": "A Classic from the Just Voices Vault",
+		// "caption-bottom": "Voices of Louie and Frankie — The Budweiser Lizards",
 		"thumbnail": "budweiser-lizards.jpg",
 		"active": true
 	},
@@ -13,8 +13,8 @@ const workData = {
 		"title": "Budweiser Superbowl Spot",
 		"url": "https://www.youtube.com/watch?v=yZ4NAgPG61I&pp=ygURYnVkd2VpemVyIGxpemFyZHM%3D",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/yZ4NAgPG61I?si=mSoQ-hoRnw53mKvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"caption-top": "A Classic from the Just Voices Vault",
-		"caption-bottom": "Voices of Louie and Frankie — The Budweiser Lizards",
+		// "caption-top": "A Classic from the Just Voices Vault",
+		// "caption-bottom": "Voices of Louie and Frankie — The Budweiser Lizards",
 		"thumbnail": "budweiser-superbowl-spot.jpg",
 		"active": true
 	},
@@ -475,8 +475,8 @@ function openLightbox(workItemKey) {
 	const lightboxMediaContent = document.querySelector('.work-lightbox-media-content');
 	lightboxMediaContent.innerHTML = workData[workItemKey]['embed'];
 	const lightboxTitle = document.querySelector('.work-lightbox-title');
-	const workItemTitle = workItem.querySelector('.work-item-preview-title');
-	lightboxTitle.innerText = workItemTitle.innerText;
+	const workItemTitle = workItem.querySelector('.work-item-preview-title-text');
+	lightboxTitle.innerHTML = workItemTitle.innerHTML;
 	lightboxTitle.href = workData[workItemKey]['url'];
 
 	// Captions
@@ -538,6 +538,27 @@ function lightboxNext() {
 	openLightbox(Object.keys(workData)[index]);
 }
 
+// Clients list observer
+const clientObserver = new IntersectionObserver((entries, observer) => {
+	
+	// Loop the entries
+	entries.forEach(entry => {
+
+		// Check if the element is intersecting with the viewport
+		if (entry.isIntersecting) {
+			setTimeout(() => {
+				entry.target.style.transform = `scale(1) rotate(${Math.random()*5-2.5}deg)`;
+			}, Math.random()*500)
+
+		} else {
+			// entry.target.style.transform = `scale(0)`;
+		}
+	});
+});
+for (let client of document.querySelectorAll('.work-clients-list p')) {
+	clientObserver.observe(client);
+}
+
 // Page transitions
 function pageTransition(url) {
 	const body = document.querySelector('body');
@@ -552,24 +573,12 @@ for (let navLink of document.querySelectorAll('.nav a')) {
 		pageTransition(navLink.href);
 	})
 }
-
-// Clients list observer
-const clientObserver = new IntersectionObserver((entries, observer) => {
-	
-	// Loop the entries
-	entries.forEach(entry => {
-
-		// Check if the element is intersecting with the viewport
-		if (entry.isIntersecting) {
-			setTimeout(() => {
-				entry.target.style.transform = `scale(1) rotate(${Math.random()*5-2.5}deg)`;
-			}, Math.random()*500)
-
-		} else {
-			entry.target.style.transform = `scale(0)`;
-		}
-	});
+window.addEventListener('pageshow', (event) => {
+	if (event.persisted) {
+		console.log('Page was loaded from cache (back/forward navigation).');
+		const body = document.querySelector('body');
+		body.dataset.transition = 1;
+	} else {
+		console.log('Page loaded normally.');
+	}
 });
-for (let client of document.querySelectorAll('.work-clients-list p')) {
-	clientObserver.observe(client);
-}

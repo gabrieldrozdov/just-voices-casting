@@ -51,3 +51,12 @@ for (let navLink of document.querySelectorAll('.nav a')) {
 		pageTransition(navLink.href);
 	})
 }
+window.addEventListener('pageshow', (event) => {
+	if (event.persisted) {
+		console.log('Page was loaded from cache (back/forward navigation).');
+		const body = document.querySelector('body');
+		body.dataset.transition = 1;
+	} else {
+		console.log('Page loaded normally.');
+	}
+});
