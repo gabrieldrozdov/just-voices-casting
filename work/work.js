@@ -13,6 +13,8 @@ const workData = {
 		"title": "Budweiser Superbowl Spot",
 		"url": "https://www.youtube.com/watch?v=yZ4NAgPG61I&pp=ygURYnVkd2VpemVyIGxpemFyZHM%3D",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/yZ4NAgPG61I?si=mSoQ-hoRnw53mKvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"caption-top": "A Classic from the Just Voices Vault",
+		"caption-bottom": "Voices of Louie and Frankie — The Budweiser Lizards",
 		"thumbnail": "budweiser-superbowl-spot.jpg",
 		"active": true
 	},
