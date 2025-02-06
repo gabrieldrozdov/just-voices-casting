@@ -40,6 +40,12 @@
 	perspective: 15rem;
 	transform-style: preserve-3d;
 }
+.about-contact-header {
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	align-items: center;
+	gap: 20px;
+}
 .about-contact-title {
 	letter-spacing: -0.03em;
 	font-variation-settings: "opsz" 32.0, "wght" 700;
@@ -47,10 +53,18 @@
 	font-size: max(1rem, 24px);
 	text-transform: uppercase;
 	font-style: italic;
+	line-height: 1em;
 	/* background-color: black; */
 	/* color: white; */
-	/* clip-path: polygon(2% 0%, 99% 5%, 100% 98%, 1% 95%); */
 	/* padding: .2em .8em; */
+	margin-bottom: .2em;
+}
+.about-contact-headshot {
+	width: 100px;
+	height: 100px;
+	background-image: url('../assets/brand/headshot.jpg');
+	background-size: cover;
+	background-position: center;
 }
 .contact-block {
 	font-size: max(.6rem, 18px);
@@ -67,12 +81,19 @@ body[data-transition="1"] .about-contact {
 }
 @media only screen and (max-width: 1000px) {
 	.about-contact-parent {
-		order: 1;
+		/* order: 1; */
 		max-width: 480px;
 		position: static;
 	}
 	.about-contact {
 		clip-path: polygon(1% 0%, 100% 2%, 99% 99%, 1% 98%);
+	}
+	.about-contact-header {
+		grid-template-columns: 60px 1fr;
+	}
+	.about-contact-headshot {
+		width: 60px;
+		height: 80px;
 	}
 }
 
