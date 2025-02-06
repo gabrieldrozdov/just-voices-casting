@@ -577,7 +577,7 @@ window.addEventListener('pageshow', (event) => {
 	if (event.persisted) {
 		console.log('Page was loaded from cache (back/forward navigation).');
 		const body = document.querySelector('body');
-		body.dataset.transition = 1;
+		body.dataset.transition = 0;
 	} else {
 		console.log('Page loaded normally.');
 	}
