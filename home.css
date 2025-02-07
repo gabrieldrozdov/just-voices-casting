@@ -450,7 +450,7 @@ body[data-transition="1"] .home-marquee {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: radial-gradient(#fa1079 0%, #2b0014 100%);
+	background: radial-gradient(#fa1079 0%, #800024 100%);
 	opacity: 0;
 	animation: home-background-gradient 1s .5s forwards;
 }

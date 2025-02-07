@@ -47,6 +47,7 @@ body[data-transition="1"] .work-title {
 	gap: 2rem;
 	overflow: hidden;
 	transition: opacity .5s;
+	min-height: 100vh;
 }
 @media only screen and (max-width: 1000px) {
 	.work-items {
@@ -123,7 +124,7 @@ body[data-transition="1"] .work-item {
 	transform-style: preserve-3d;
 	position: relative;
 	text-align: center;
-	padding: 10px 1em 10px 1em;
+	padding: .8em 1em .8em 1em;
 	line-height: 1em;
 	font-size: max(.75rem, 18px);
 	font-variation-settings: "opsz" 32.0, "wght" 700;
@@ -140,7 +141,7 @@ body[data-transition="1"] .work-item {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	gap: 10px;
+	gap: 5px;
 	padding: .3em 1em .2em 1em;
 	font-size: inherit;
 	position: relative;
@@ -568,7 +569,7 @@ body[data-transition="1"] .work-marquee {
 	bottom: 0;
 	opacity: 0;
 	will-change: opacity;
-	background: radial-gradient(#1c0a55 0%, #060211 100%);
+	background: radial-gradient(#1c0a55 0%, #000f27 100%);
 	animation: work-background-gradient 1s .5s forwards;
 }
 @keyframes work-background-gradient {

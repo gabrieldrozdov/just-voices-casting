@@ -103,13 +103,14 @@ body[data-transition="1"] .about-contact {
 	font-weight: 700;
 	font-size: 1.2rem;
 	max-width: max(80vw, 500px);
-	text-wrap: balance;
+	text-wrap: pretty;
 	animation: about-bio-in 1s forwards;
 	transform-origin: left center;
 	display: flex;
 	flex-direction: column;
+	color: black;
 	gap: 1em;
-	text-shadow: 0 0 10px rgba(0,0,0,.05);
+	/* text-shadow: 0 0 10px rgba(0,0,0,.05); */
 }
 @keyframes about-bio-in {
 	from {
@@ -155,7 +156,7 @@ body[data-transition="1"] .about-bio {
 	bottom: 0;
 	opacity: 0;
 	will-change: opacity;
-	background: radial-gradient(#f9de4b 0%, #826f01 100%);
+	background: radial-gradient(#ffdd00 0%, #ffbf00 100%);
 	animation: about-background-gradient 1s .5s forwards;
 }
 @keyframes about-background-gradient {
