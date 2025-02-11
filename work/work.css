@@ -217,7 +217,7 @@ body[data-transition="1"] .work-item {
 	filter: drop-shadow(0 0 100px rgba(169, 151, 223, 0.5))
 }
 .work-lightbox-media[data-caption="0"] {
-	padding: 5%;
+	padding: 2%;
 	aspect-ratio: 2/1.4;
 	max-height: 80vmin;
 	overflow: hidden;
@@ -306,6 +306,7 @@ body[data-transition="1"] .work-item {
 	min-height: 60px;
 	display: flex;
 	/* align-items: center; */
+	justify-content: center;
 	gap: 5px;
 	flex-direction: column;
 	background-color: white;
