@@ -1,12 +1,5 @@
 // Work data
 const workData = {
-	"chatgpt-super-bowl-2025": {
-		"title": "ChatGPT Super Bowl 2025",
-		"url": "https://www.youtube.com/watch?v=kIhb5pEo_j0",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/kIhb5pEo_j0?si=ajodlgRTFx23ckYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "chatgpt-super-bowl-2025.jpg",
-		"active": true
-	},
 	"budweiser-lizards": {
 		"title": "<span class='work-item-title-small'>A Classic from the Just Voices Vault</span><span>Voices of Louie and Frankie - The Budweiser Lizards</span>",
 		"url": "https://vimeo.com/312797893",
@@ -14,12 +7,40 @@ const workData = {
 		"thumbnail": "budweiser-lizards.jpg",
 		"active": true
 	},
+	"away-travel": {
+		"title": "Away Travel",
+		"url": "https://www.youtube.com/watch?v=HCYFpIk08YI",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/HCYFpIk08YI?si=bMyG7Uc-gtxiIuaj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "away-travel.jpg",
+		"active": true
+	},
+	"dicks-sporting-goods": {
+		"title": "Dick’s Sporting Goods",
+		"url": "https://www.ispot.tv/ad/TG6Y/dicks-sporting-goods-dsg-mom-and-dad-welcome-to-sporthood-song-by-gioachino-rossini",
+		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/TG6Y" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
+		"thumbnail": "dicks-sporting-goods.jpg",
+		"active": true
+	},
+	"new-balance": {
+		"title": "New Balance",
+		"url": "https://www.youtube.com/watch?v=QjUiywy1aNQ",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/QjUiywy1aNQ?si=Th4CU9NHmWtAgLUt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "new-balance.jpg",
+		"active": true
+	},
+	"chatgpt-super-bowl-2025": {
+		"title": "ChatGPT Super Bowl 2025",
+		"url": "https://www.youtube.com/watch?v=kIhb5pEo_j0",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/kIhb5pEo_j0?si=ajodlgRTFx23ckYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "chatgpt-super-bowl-2025.jpg",
+		"active": true
+	},
 	"budweiser-superbowl-spot": {
 		"title": "Budweiser Superbowl Spot",
 		"url": "https://www.youtube.com/watch?v=yZ4NAgPG61I&pp=ygURYnVkd2VpemVyIGxpemFyZHM%3D",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/yZ4NAgPG61I?si=mSoQ-hoRnw53mKvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "budweiser-superbowl-spot.jpg",
-		"active": true
+		"active": false
 	},
 	"ore-ida-sunrisa": {
 		"title": "Ore-Ida — Sunrisa",
