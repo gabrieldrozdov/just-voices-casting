@@ -103,7 +103,7 @@ const workData = {
 		"url": "https://www.youtube.com/watch?v=qqxsiAdb3GA",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/qqxsiAdb3GA?si=cclboZk7vqgXeVhr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "progressive-radio-protecting-valuables-wedding-2025.jpg",
-		"active": true
+		"active": false
 	},
 	"progressive-radio-protecting-loved-ones-college-grad": {
 		"title": "Progressive Radio Protecting Loved Ones — College Grad",
