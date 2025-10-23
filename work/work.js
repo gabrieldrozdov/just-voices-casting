@@ -56,6 +56,34 @@ const workData = {
 		"thumbnail": "stouffers-supreme.jpg",
 		"active": true
 	},
+	"away-travel": {
+		"title": "Away Travel",
+		"url": "https://www.youtube.com/watch?v=HCYFpIk08YI",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/HCYFpIk08YI?si=bMyG7Uc-gtxiIuaj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "away-travel.jpg",
+		"active": true
+	},
+	"dicks-sporting-goods": {
+		"title": "Dick’s Sporting Goods",
+		"url": "https://www.ispot.tv/ad/TG6Y/dicks-sporting-goods-dsg-mom-and-dad-welcome-to-sporthood-song-by-gioachino-rossini",
+		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/TG6Y" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
+		"thumbnail": "dicks-sporting-goods.jpg",
+		"active": true
+	},
+	"new-balance": {
+		"title": "New Balance",
+		"url": "https://www.youtube.com/watch?v=QjUiywy1aNQ",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/QjUiywy1aNQ?si=Th4CU9NHmWtAgLUt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "new-balance.jpg",
+		"active": true
+	},
+	"ore-ida-sunrisa": {
+		"title": "Ore-Ida — Sunrisa",
+		"url": "https://www.youtube.com/watch?v=CQAoc0HntTM",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/CQAoc0HntTM?si=8fwluufB0HyLrZeI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "ore-ida-sunrisa.jpg",
+		"active": true
+	},
 	"progressive-radio-mercury-2025-award-winner-bold-claims-campaign": {
 		"title": "Progressive Radio 2025 Mercury Award Winner — Bold Claims Campaign",
 		"url": "https://www.radiomercuryawards.com/audio2025/14564.mp3",
@@ -145,34 +173,6 @@ const workData = {
 		"url": "https://www.ispot.tv/ad/nmSa/progressive-home-quote-explorer-the-upper-hands",
 		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/nmSa" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
 		"thumbnail": "progressive-the-upper-hands.jpg",
-		"active": true
-	},
-	"away-travel": {
-		"title": "Away Travel",
-		"url": "https://www.youtube.com/watch?v=HCYFpIk08YI",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/HCYFpIk08YI?si=bMyG7Uc-gtxiIuaj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "away-travel.jpg",
-		"active": true
-	},
-	"dicks-sporting-goods": {
-		"title": "Dick’s Sporting Goods",
-		"url": "https://www.ispot.tv/ad/TG6Y/dicks-sporting-goods-dsg-mom-and-dad-welcome-to-sporthood-song-by-gioachino-rossini",
-		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/TG6Y" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
-		"thumbnail": "dicks-sporting-goods.jpg",
-		"active": true
-	},
-	"new-balance": {
-		"title": "New Balance",
-		"url": "https://www.youtube.com/watch?v=QjUiywy1aNQ",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/QjUiywy1aNQ?si=Th4CU9NHmWtAgLUt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "new-balance.jpg",
-		"active": true
-	},
-	"ore-ida-sunrisa": {
-		"title": "Ore-Ida — Sunrisa",
-		"url": "https://www.youtube.com/watch?v=CQAoc0HntTM",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/CQAoc0HntTM?si=8fwluufB0HyLrZeI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "ore-ida-sunrisa.jpg",
 		"active": true
 	},
 	"cox-communications": {
@@ -287,20 +287,20 @@ const workData = {
 		"thumbnail": "jp-morgan-wealth-management.jpg",
 		"active": true
 	},
-	"baskin-robbins-creature-creations": {
-		"title": "Baskin Robbins — Creature Creations",
-		"url": "https://www.youtube.com/watch?v=tJnyNT3BSJo",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/tJnyNT3BSJo?si=UF_e7nQWZDvcPsL7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "baskin-robbins-creature-creations.jpg",
-		"active": true
-	},
-	"baskin-robbins-cappuccino-blast": {
-		"title": "Baskin Robbins — Cappuccino Blast",
-		"url": "https://www.youtube.com/watch?v=CUZj_FhPzqc",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/CUZj_FhPzqc?si=3IYVIhGRef88iAPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "baskin-robbins-cappuccino-blast.jpg",
-		"active": true
-	},
+	// "baskin-robbins-creature-creations": {
+	// 	"title": "Baskin Robbins — Creature Creations",
+	// 	"url": "https://www.youtube.com/watch?v=tJnyNT3BSJo",
+	// 	"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/tJnyNT3BSJo?si=UF_e7nQWZDvcPsL7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+	// 	"thumbnail": "baskin-robbins-creature-creations.jpg",
+	// 	"active": true
+	// },
+	// "baskin-robbins-cappuccino-blast": {
+	// 	"title": "Baskin Robbins — Cappuccino Blast",
+	// 	"url": "https://www.youtube.com/watch?v=CUZj_FhPzqc",
+	// 	"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/CUZj_FhPzqc?si=3IYVIhGRef88iAPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+	// 	"thumbnail": "baskin-robbins-cappuccino-blast.jpg",
+	// 	"active": true
+	// },
 	"baskin-robbins-iced-tea-freeze": {
 		"title": "Baskin Robbins — Iced Tea Freeze",
 		"url": "https://www.youtube.com/watch?v=bSaGH1FKHrI",
