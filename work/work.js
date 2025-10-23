@@ -1,10 +1,150 @@
 // Work data
 const workData = {
-	"budweiser-lizards": {
-		"title": "<span class='work-item-title-small'>A Classic from the Just Voices Vault</span><span>Voices of Louie and Frankie - The Budweiser Lizards</span>",
-		"url": "https://vimeo.com/312797893",
-		"embed": `<div style="padding:75% 0 0 0;position:static;"><iframe src="https://player.vimeo.com/video/312797893?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Budweiser | Those Frogs Are Gonna Pay"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
-		"thumbnail": "budweiser-lizards.jpg",
+	"chatgpt-super-bowl-2025": {
+		"title": "ChatGPT Super Bowl 2025",
+		"url": "https://www.youtube.com/watch?v=kIhb5pEo_j0",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/kIhb5pEo_j0?si=ajodlgRTFx23ckYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "chatgpt-super-bowl-2025.jpg",
+		"active": true
+	},
+	"progressive-tv-girl-math": {
+		"title": "Progressive TV — Girl Math",
+		"url": "https://www.ispot.tv/ad/B1Ze/progressive-girl-math",
+		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/B1Ze" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div`,
+		"thumbnail": "progressive-girl-math.jpg",
+		"active": true
+	},
+	"pnc-bank-brilliant-ben-best-interest": {
+		"title": "PNC Bank Brilliant Ben — Best Interest",
+		"url": "https://www.youtube.com/watch?v=4iJ7r5HdjZ8",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/4iJ7r5HdjZ8?si=8E4jDoy8wQmognVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "pnc-brilliant-ben-best-interest.jpg",
+		"active": true
+	},
+	"pnc-bank-brilliant-ben-on-trees": {
+		"title": "PNC Bank Brilliant Ben — On Trees",
+		"url": "https://www.youtube.com/watch?v=AWJ1xuaQjHg",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/AWJ1xuaQjHg?si=edlNyE1Y67Yg7IHf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "pnc-brilliant-ben-on-trees.jpg",
+		"active": true
+	},
+	"chase-freedom-unlimited-memories": {
+		"title": "Chase Freedom Unlimited — Memories",
+		"url": "https://www.ispot.tv/ad/B16e/chase-freedom-unlimited-memories",
+		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/B16e" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div`,
+		"thumbnail": "chase-freedom-unlimited-memories.jpg",
+		"active": true
+	},
+	"chase-sapphire-reserve-color-of-holi": {
+		"title": "Chase Sapphire Reserve — Color of Holi",
+		"url": "https://www.ispot.tv/ad/TUA7/chase-sapphire-reserve-the-color-of-holi",
+		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/TUA7" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div`,
+		"thumbnail": "chase-sapphire-reserve-color-of-holi.jpg",
+		"active": true
+	},
+	"fanduel-same-game-parlay": {
+		"title": "FanDuel — Same Game Parlay: Profit Boost",
+		"url": "https://www.ispot.tv/ad/BRsq/fanduel-same-game-parlay-profit-boost",
+		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/BRsq" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div`,
+		"thumbnail": "fanduel.jpg",
+		"active": true
+	},
+	"stouffers-supreme-taunting-kitchen": {
+		"title": "Stouffer's Supreme — Taunting Kitchen",
+		"url": "https://www.youtube.com/watch?v=QZlhH0FT8hQ",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/QZlhH0FT8hQ?si=BrSP0LoluyspPmlR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "stouffers-supreme.jpg",
+		"active": true
+	},
+	"progressive-radio-mercury-2025-award-winner-bold-claims-campaign": {
+		"title": "Progressive Radio 2025 Mercury Award Winner — Bold Claims Campaign",
+		"url": "https://www.radiomercuryawards.com/audio2025/14564.mp3",
+		"embed": `<iframe width="560" height="315" src="https://www.radiomercuryawards.com/audio2025/14564.mp3"></iframe>`,
+		"thumbnail": "progressive.jpg",
+		"active": true
+	},
+	// "progressive-radio-2025-protecting-valuables-wedding": {
+	// 	"title": "Progressive Radio 2025 — Protecting Valuables — Wedding",
+	// 	"url": "https://www.youtube.com/watch?v=qqxsiAdb3GA",
+	// 	"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/qqxsiAdb3GA?si=cclboZk7vqgXeVhr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+	// 	"thumbnail": "progressive.jpg",
+	// 	"active": false
+	// },
+	"progressive-radio-protecting-loved-ones-college-grad": {
+		"title": "Progressive Radio 2024 — Protecting Loved Ones — College Grad",
+		"url": "https://www.youtube.com/watch?v=3zN2yNnjg3w",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/3zN2yNnjg3w?si=kE3QQaPUM8dopDVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "progressive.jpg",
+		"active": true
+	},
+	"progressive-radio-protecting-loved-ones-wedding": {
+		"title": "Progressive Radio 2024 — Protecting Loved Ones — Wedding",
+		"url": "https://www.youtube.com/watch?v=zVhZ9iFxOAU",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/zVhZ9iFxOAU?si=wWM1SP5JXgz7z60g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "progressive.jpg",
+		"active": true
+	},
+	"progressive-radio-2024-what-do-they-have-in-common": {
+		"title": "Progressive Radio 2024 — What Do They Have in Common — Pizza Delivery",
+		"url": "https://www.youtube.com/watch?v=ceGXyBO1fC8",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/ceGXyBO1fC8?si=Lx8LHBo384ej4S1n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "progressive.jpg",
+		"active": true
+	},
+	"progressive-radio-2024-what-do-they-have-in-common-fireworks": {
+		"title": "Progressive Radio 2024 — What Do They Have in Common — Fireworks",
+		"url": "https://www.youtube.com/watch?v=Dt4YQk7dr0Q",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/Dt4YQk7dr0Q?si=TUZs9RtVZZEg6Y3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "progressive.jpg",
+		"active": true
+	},
+	"progressive-radio-2023-an-ad-from-mom": {
+		"title": "Progressive Radio 2023 — An Ad from Mom",
+		"url": "https://www.youtube.com/watch?v=gva1RmgQLQ4",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/gva1RmgQLQ4?si=wh3YOCNcyEkM8H7V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "progressive.jpg",
+		"active": true
+	},
+	"progressive-radio-2023-renters-mvps": {
+		"title": "Progressive Radio 2023 — Renter’s MVPs",
+		"url": "https://www.youtube.com/watch?v=-eVd7Ur6cwY",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/-eVd7Ur6cwY?si=LkaO5Z8iGk0_IH7L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "progressive.jpg",
+		"active": true
+	},
+	"progressive-radio-mercury-2022-award-winner-great-protection-bad-timing": {
+		"title": "Progressive Radio 2022 Mercury Award Winner — Great Protection, Bad Timing",
+		"url": "https://www.radiomercuryawards.com/audio2022/13269.mp3",
+		"embed": `<iframe width="560" height="315" src="https://www.radiomercuryawards.com/audio2022/13269.mp3"></iframe>`,
+		"thumbnail": "progressive.jpg",
+		"active": true
+	},
+	"progressive-tv-cant-sleep": {
+		"title": "Progressive TV — Can’t Sleep",
+		"url": "https://www.ispot.tv/ad/5kIm/progressive-cant-sleep",
+		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/5kIm" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
+		"thumbnail": "progressive-tv-cant-sleep.jpg",
+		"active": true
+	},
+	"progressive-tv-experts": {
+		"title": "Progressive TV — Experts",
+		"url": "https://www.ispot.tv/ad/wFlA/progressive-experts",
+		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/wFlA" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
+		"thumbnail": "progressive-tv-experts.jpg",
+		"active": true
+	},
+	"progressive-tv-bundles": {
+		"title": "Progressive TV — Bundles",
+		"url": "https://www.youtube.com/watch?v=6ZFCjIlknFY",
+		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/6ZFCjIlknFY?si=3-kpejuAulvxKtBd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+		"thumbnail": "progressive-tv-bundles.jpg",
+		"active": true
+	},
+	"progressive-the-upper-hands": {
+		"title": "Progressive TV — The Upper Hands",
+		"url": "https://www.ispot.tv/ad/nmSa/progressive-home-quote-explorer-the-upper-hands",
+		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/nmSa" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
+		"thumbnail": "progressive-the-upper-hands.jpg",
 		"active": true
 	},
 	"away-travel": {
@@ -27,20 +167,6 @@ const workData = {
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/QjUiywy1aNQ?si=Th4CU9NHmWtAgLUt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "new-balance.jpg",
 		"active": true
-	},
-	"chatgpt-super-bowl-2025": {
-		"title": "ChatGPT Super Bowl 2025",
-		"url": "https://www.youtube.com/watch?v=kIhb5pEo_j0",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/kIhb5pEo_j0?si=ajodlgRTFx23ckYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "chatgpt-super-bowl-2025.jpg",
-		"active": true
-	},
-	"budweiser-superbowl-spot": {
-		"title": "Budweiser Superbowl Spot",
-		"url": "https://www.youtube.com/watch?v=yZ4NAgPG61I&pp=ygURYnVkd2VpemVyIGxpemFyZHM%3D",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/yZ4NAgPG61I?si=mSoQ-hoRnw53mKvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "budweiser-superbowl-spot.jpg",
-		"active": false
 	},
 	"ore-ida-sunrisa": {
 		"title": "Ore-Ida — Sunrisa",
@@ -70,76 +196,6 @@ const workData = {
 		"thumbnail": "country-crock.jpg",
 		"active": true
 	},
-	"progressive-tv-cant-sleep": {
-		"title": "Progressive TV Can’t Sleep",
-		"url": "https://www.ispot.tv/ad/5kIm/progressive-cant-sleep",
-		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/5kIm" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
-		"thumbnail": "progressive-tv-cant-sleep.jpg",
-		"active": true
-	},
-	"progressive-tv-experts": {
-		"title": "Progressive TV Experts",
-		"url": "https://www.ispot.tv/ad/wFlA/progressive-experts",
-		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/wFlA" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
-		"thumbnail": "progressive-tv-experts.jpg",
-		"active": true
-	},
-	"progressive-tv-bundles": {
-		"title": "Progressive TV Bundles",
-		"url": "https://www.youtube.com/watch?v=6ZFCjIlknFY",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/6ZFCjIlknFY?si=3-kpejuAulvxKtBd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "progressive-tv-bundles.jpg",
-		"active": true
-	},
-	"progressive-the-upper-hands": {
-		"title": "Progressive The Upper Hands",
-		"url": "https://www.ispot.tv/ad/nmSa/progressive-home-quote-explorer-the-upper-hands",
-		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/nmSa" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
-		"thumbnail": "progressive-the-upper-hands.jpg",
-		"active": true
-	},
-	"progressive-radio-protecting-valuables-wedding-2025": {
-		"title": "Progressive Radio Protecting Valuables — Wedding (2025)",
-		"url": "https://www.youtube.com/watch?v=qqxsiAdb3GA",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/qqxsiAdb3GA?si=cclboZk7vqgXeVhr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "progressive-radio-protecting-valuables-wedding-2025.jpg",
-		"active": false
-	},
-	"progressive-radio-protecting-loved-ones-college-grad": {
-		"title": "Progressive Radio Protecting Loved Ones — College Grad",
-		"url": "https://www.youtube.com/watch?v=3zN2yNnjg3w",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/3zN2yNnjg3w?si=kE3QQaPUM8dopDVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "progressive-radio-protecting-loved-ones-college-grad.jpg",
-		"active": true
-	},
-	"progressive-radio-protecting-loved-ones-wedding": {
-		"title": "Progressive Radio Protecting Loved Ones — Wedding",
-		"url": "https://www.youtube.com/watch?v=zVhZ9iFxOAU",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/zVhZ9iFxOAU?si=wWM1SP5JXgz7z60g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "progressive-radio-protecting-loved-ones-wedding.jpg",
-		"active": true
-	},
-	"progressive-radio-what-do-they-have-in-common": {
-		"title": "Progressive Radio What Do They Have in Common — Pizza Delivery",
-		"url": "https://www.youtube.com/watch?v=ceGXyBO1fC8",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/ceGXyBO1fC8?si=Lx8LHBo384ej4S1n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "progressive-radio-what-do-they-have-in-common.jpg",
-		"active": true
-	},
-	"progressive-radio-2024-what-do-they-have-in-common-fireworks": {
-		"title": "Progressive Radio 2024 What Do They Have in Common — Fireworks",
-		"url": "https://www.youtube.com/watch?v=Dt4YQk7dr0Q",
-		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/Dt4YQk7dr0Q?si=TUZs9RtVZZEg6Y3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-		"thumbnail": "progressive-radio-2024-what-do-they-have-in-common-fireworks.jpg",
-		"active": true
-	},
-	"progressive-radio-mercury-award-winner-2022-great-protection-bad-timing": {
-		"title": "Progressive Radio Mercury Award Winner 2022 Great Protection, Bad Timing",
-		"url": "https://www.radiomercuryawards.com/audio2022/13269.mp3",
-		"embed": `<iframe width="560" height="315" src="https://www.radiomercuryawards.com/audio2022/13269.mp3"></iframe>`,
-		"thumbnail": "progressive-radio-mercury-award-winner-2022-great-protection-bad-timing.jpg",
-		"active": true
-	},
 	"xfinity-radio": {
 		"title": "Xfinity Radio",
 		"url": "https://www.youtube.com/watch?v=JGJIGj9MIrg",
@@ -162,21 +218,21 @@ const workData = {
 		"active": true
 	},
 	"toyota-rav4-book-club": {
-		"title": "Toyota RAV4 Book Club",
+		"title": "Toyota RAV4 — Book Club",
 		"url": "https://youtu.be/o6p1AjR7tw0",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/o6p1AjR7tw0?si=puB32Oq5K9kKbBDC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "toyota-rav4-book-club.jpg",
 		"active": true
 	},
 	"toyota-corolla-third-wheel": {
-		"title": "Toyota Corolla Third Wheel",
+		"title": "Toyota Corolla — Third Wheel",
 		"url": "https://video.adsoftheworld.com/trvlzrlvq2qa73wef9r56kl1dtc9.mp4",
 		"embed": `<iframe src="https://video.adsoftheworld.com/trvlzrlvq2qa73wef9r56kl1dtc9.mp4"></iframe>`,
 		"thumbnail": "toyota-corolla-third-wheel.jpg",
 		"active": true
 	},
 	"coors-light-the-cool-train-featuring-ll-cool-j-spanish": {
-		"title": "Coors Light The Cool Train Featuring LL Cool J — Spanish",
+		"title": "Coors Light — The Cool Train Featuring LL Cool J — Spanish",
 		"url": "https://www.ispot.tv/ad/6wWM/coors-light-tren-fro-con-ll-cool-j-lainey-wilson-cancin-de-the-ojays-spanish",
 		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/6wWM" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
 		"thumbnail": "coors-light-the-cool-train-featuring-ll-cool-j-spanish.jpg",
@@ -190,35 +246,35 @@ const workData = {
 		"active": true
 	},
 	"disney-little-einsteins": {
-		"title": "Disney Little Einsteins",
+		"title": "Disney — Little Einsteins",
 		"url": "https://www.youtube.com/watch?v=XPMzSYzKImM",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/XPMzSYzKImM?si=84cLmGx-TeN-64_b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "disney-little-einsteins.jpg",
 		"active": true
 	},
 	"bounty-quicker-picker-upper-pirate": {
-		"title": "Bounty Quicker Picker Upper Pirate",
+		"title": "Bounty Quicker Picker Upper — Pirate",
 		"url": "https://www.ispot.tv/ad/du9u/bounty-pirate",
 		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/du9u" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
 		"thumbnail": "bounty-quicker-picker-upper-pirate.jpg",
 		"active": true
 	},
 	"bounty-quicker-picker-upper-chopsticks": {
-		"title": "Bounty Quicker Picker Upper Chopsticks",
+		"title": "Bounty Quicker Picker Upper — Chopsticks",
 		"url": "https://www.ispot.tv/ad/np2G/bounty-chopsticks",
 		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/np2G" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
 		"thumbnail": "bounty-quicker-picker-upper-chopsticks.jpg",
 		"active": true
 	},
 	"covergirl-clean-collection": {
-		"title": "COVERGIRL Clean Collection",
+		"title": "COVERGIRL — Clean Collection",
 		"url": "https://www.youtube.com/watch?v=TiKQIBBya54",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/TiKQIBBya54?si=jnqvofC9AZg_xZvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "cover-girl-clean-collection.jpg",
 		"active": true
 	},
 	"essentia-it-might-as-well-be-you": {
-		"title": "Essentia It Might As Well Be You",
+		"title": "Essentia — It Might As Well Be You",
 		"url": "https://www.ispot.tv/ad/IcZT/essentia-water-someone-is-going-to-featuring-patrick-mahomes-ii",
 		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/IcZT" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
 		"thumbnail": "essentia-it-might-as-well-be-you.jpg",
@@ -232,21 +288,21 @@ const workData = {
 		"active": true
 	},
 	"baskin-robbins-creature-creations": {
-		"title": "Baskin Robbins Creature Creations",
+		"title": "Baskin Robbins — Creature Creations",
 		"url": "https://www.youtube.com/watch?v=tJnyNT3BSJo",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/tJnyNT3BSJo?si=UF_e7nQWZDvcPsL7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "baskin-robbins-creature-creations.jpg",
 		"active": true
 	},
 	"baskin-robbins-cappuccino-blast": {
-		"title": "Baskin Robbins Cappuccino Blast",
+		"title": "Baskin Robbins — Cappuccino Blast",
 		"url": "https://www.youtube.com/watch?v=CUZj_FhPzqc",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/CUZj_FhPzqc?si=3IYVIhGRef88iAPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "baskin-robbins-cappuccino-blast.jpg",
 		"active": true
 	},
 	"baskin-robbins-iced-tea-freeze": {
-		"title": "Baskin Robbins Iced Tea Freeze",
+		"title": "Baskin Robbins — Iced Tea Freeze",
 		"url": "https://www.youtube.com/watch?v=bSaGH1FKHrI",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/bSaGH1FKHrI?si=94ME9NUxquWthVXC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "baskin-robbins-iced-tea-freeze.jpg",
@@ -260,28 +316,28 @@ const workData = {
 		"active": true
 	},
 	"delsym-the-joy-of-not-coughing": {
-		"title": "Delsym The Joy of Not Coughing",
+		"title": "Delsym — The Joy of Not Coughing",
 		"url": "https://www.ispot.tv/ad/w_nT/delsym-12-hour-cough-relief-this-is-charlie-not-coughing",
 		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/w_nT" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
 		"thumbnail": "delsym-the-joy-of-not-coughing.jpg",
 		"active": true
 	},
 	"ihop-addams-family": {
-		"title": "IHOP Addams Family",
+		"title": "IHOP — Addams Family",
 		"url": "https://vimeo.com/417363862",
-		"embed": `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/417363862?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Addams Family | IHOP"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+		"embed": `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/417363862?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Addams Family — IHOP"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
 		"thumbnail": "ihop-addams-family.jpg",
 		"active": true
 	},
 	"carls-jr-pig": {
-		"title": "Carl’s Jr. Pig",
+		"title": "Carl’s Jr. — Pig",
 		"url": "https://www.ispot.tv/ad/IxQi/carls-jr-bacon-truffle-angus-burger-pig",
 		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/IxQi" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
 		"thumbnail": "carls-jr-pig.jpg",
 		"active": true
 	},
 	"carls-jr-typo": {
-		"title": "Carl’s Jr. Typo",
+		"title": "Carl’s Jr. — Typo",
 		"url": "https://www.ispot.tv/ad/o2jE/carls-jr-guacamole-double-cheeseburger-typo",
 		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/o2jE" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>
 		`,
@@ -289,14 +345,14 @@ const workData = {
 		"active": true
 	},
 	"cvs-pharmacy-long-receipt-short-story": {
-		"title": "CVS Pharmacy Long Receipt Short Story",
+		"title": "CVS Pharmacy — Long Receipt, Short Story",
 		"url": "https://www.youtube.com/watch?v=ndkuK1ooUj0",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/ndkuK1ooUj0?si=lPNz28MTaoGcmX5_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "cvs-pharmacy-long-receipt-short-story.jpg",
 		"active": true
 	},
 	"jw-marriot-jw-treatment": {
-		"title": "JW Marriot JW Treatment",
+		"title": "JW Marriot — The JW Treatment",
 		"url": "https://www.youtube.com/watch?v=3Ot1MwiP9B8",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/3Ot1MwiP9B8?si=QYaGox2X9gxzS3EI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "jw-marriot-jw-treatment.jpg",
@@ -345,12 +401,26 @@ const workData = {
 		"active": true
 	},
 	"need-for-speed-undercover": {
-		"title": "Need For Speed — Undercover",
+		"title": "Need For Speed Undercover",
 		"url": "https://www.youtube.com/watch?v=xo1DFRut1nQ",
 		"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/xo1DFRut1nQ?si=rlFdnexbhgIZXsHd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
 		"thumbnail": "need-for-speed-undercover.jpg",
 		"active": true
-	}
+	},
+	"budweiser-lizards": {
+		"title": "<span class='work-item-title-small'>A Classic from the Just Voices Vault</span><span>Voices of Louie and Frankie — The Budweiser Lizards</span>",
+		"url": "https://vimeo.com/312797893",
+		"embed": `<div style="padding:75% 0 0 0;position:static;"><iframe src="https://player.vimeo.com/video/312797893?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Budweiser — Those Frogs Are Gonna Pay"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+		"thumbnail": "budweiser-lizards.jpg",
+		"active": true
+	},
+	// "budweiser-superbowl-spot": {
+	// 	"title": "Budweiser Superbowl Spot",
+	// 	"url": "https://www.youtube.com/watch?v=yZ4NAgPG61I&pp=ygURYnVkd2VpemVyIGxpemFyZHM%3D",
+	// 	"embed": `<iframe width="560" height="315" src="https://www.youtube.com/embed/yZ4NAgPG61I?si=mSoQ-hoRnw53mKvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+	// 	"thumbnail": "budweiser-superbowl-spot.jpg",
+	// 	"active": false
+	// }
 	// "progressive-tv-progressive-park": {
 	// 	"title": "Progressive A Pet Too Far",
 	// 	"url": "https://youtu.be/iRyhqj0tO_8",
