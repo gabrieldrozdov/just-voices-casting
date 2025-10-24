@@ -65,11 +65,18 @@ const workData = {
 	},
 	"dicks-sporting-goods": {
 		"title": "Dick’s Sporting Goods",
-		"url": "https://www.ispot.tv/ad/TG6Y/dicks-sporting-goods-dsg-mom-and-dad-welcome-to-sporthood-song-by-gioachino-rossini",
-		"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/TG6Y" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
+		"url": "/assets/media/dicks-sporting-goods.mp4",
+		"embed": `<iframe width="560" height="315" src="/assets/media/dicks-sporting-goods.mp4"></iframe>`,
 		"thumbnail": "dicks-sporting-goods.jpg",
 		"active": true
 	},
+	// "dicks-sporting-goods": {
+	// 	"title": "Dick’s Sporting Goods",
+	// 	"url": "https://www.ispot.tv/ad/TG6Y/dicks-sporting-goods-dsg-mom-and-dad-welcome-to-sporthood-song-by-gioachino-rossini",
+	// 	"embed": `<div style="position:relative; width:100%; padding-top:56.25%; padding-bottom:40px;"><iframe src="https://www.ispot.tv/share/TG6Y" style="position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%;" frameborder="0" scrolling="no" allowfullscreen=""></iframe></div>`,
+	// 	"thumbnail": "dicks-sporting-goods.jpg",
+	// 	"active": true
+	// },
 	"new-balance": {
 		"title": "New Balance",
 		"url": "https://www.youtube.com/watch?v=QjUiywy1aNQ",
